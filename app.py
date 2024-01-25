@@ -56,6 +56,17 @@ cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platforn, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platforn}]({link})")
 st.write('#')
+st.subheader("About Me")
+st.write('''
+         Aspiring computer scientist with strong skills in Python, Linux, and
+applied machine learning. Demonstrated ability to create data-driven
+solutions using statistical modeling and algorithmic optimization
+techniques. Passionate about innovation and learning new technologies.
+Seeking a challenging role in a forward-thinking organization where I can
+contribute my expertise, collaborate on impactful projects, and push the
+technological boundaries.
+         ''')
+st.write("---")
 
 st.subheader("Experience & Qualifications")
 st.write("""
