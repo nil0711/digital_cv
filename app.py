@@ -7,6 +7,7 @@ current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd
 css_file = current_dir/"styles"/ "main.css"
 resume_file = current_dir/"assets"/"NILANJAN GHOSH.pdf"
 profile_pic = current_dir/"assets"/"788.jpg"
+social_logo = current_dir/"assets"
 
 PAGE_TITLE = "Digital CV | Nilanjan Ghosh"
 PAGE_ICON = ":wave:"
@@ -14,19 +15,12 @@ NAME ="Nilanjan Ghosh"
 DESCRIPTION ="""
 Motivated computer science student specializing in applied machine learning, Python, and Linux, with a focus on crafting data-driven solutions."""
 EMAIL ="nghosh0711@gmail.com"
-SOCIAL_MEDIA={
-    "LinkedIN":"https://www.linkedin.com/in/nilanjan-ghosh-a25747282/",
-    "GitHub":"https://github.com/nil0711",
-    "X":"https://twitter.com/csnil0711",
-    
-
-}
 PROJECTS={
     ":speech_balloon: Chat Analysis with Sentiment Analyzer" :"https://miniproject-senti.streamlit.app/",
     ":file_folder: File Manager":"https://github.com/nil0711/CODE/blob/main/tkinter_test/test5.py",
     ":construction: LLM Project":"Currently under development"
 }
-st.set_page_config(page_title = PAGE_TITLE,page_icon=PAGE_ICON )
+st.set_page_config(page_title = PAGE_TITLE,page_icon=PAGE_ICON ,initial_sidebar_state="collapsed")
 
 
 with open(css_file) as f:
@@ -50,18 +44,51 @@ with col2:
         
     )
     st.write("📨", EMAIL)
+SOCIAL_MEDIA={
+    "LinkedIN":"https://www.linkedin.com/in/nilanjan-ghosh-a25747282/",
+    "GitHub":"https://github.com/nil0711",
+    "X":"https://twitter.com/csnil0711",
+    
+
+}
+platform_images = {
+    "LinkedIN": "linkedin.png",
+    "GitHub": "github.png",
+    "X": "x.png",
+}
+
     
 st.write("#")
 cols = st.columns(len(SOCIAL_MEDIA))
-for index, (platforn, link) in enumerate(SOCIAL_MEDIA.items()):
-    cols[index].write(f"[{platforn}]({link})")
+for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+    # Displaying the image with a width of 24
+    image_path = f"{social_logo}/{platform_images[platform]}"
+    img = Image.open(image_path)
+    with cols[index]:
+        subcol1, subcol2 = st.columns([0.1,1])
+        subcol1.image(img, width=24, use_column_width=False)
+        subcol2.write(f"[{platform}]({link})")
+        hide_img_fs = '''
+        <style>
+        button[title="View fullscreen"]{
+            visibility: hidden;}
+        </style>
+        '''
+
+        st.markdown(hide_img_fs, unsafe_allow_html=True)
+
 st.write('#')
 st.subheader("About Me")
 st.write('''
-         I am an aspiring computer scientist with strong skills in Python, Linux, and applied machine learning. I have demonstrated the ability to create data-driven solutions using statistical modeling and algorithmic optimization techniques. I am passionate about innovation and learning new technologies. I am seeking a challenging role in a forward-thinking organization where I can contribute my expertise, collaborate on impactful projects, and push the technological boundaries.
+         Aspiring computer scientist with strong skills in Python, Linux, and
+applied machine learning. Demonstrated ability to create data-driven
+solutions using statistical modeling and algorithmic optimization
+techniques. Passionate about innovation and learning new technologies.
+Seeking a challenging role in a forward-thinking organization where I can
+contribute my expertise, collaborate on impactful projects, and push the
+technological boundaries.
          ''')
 st.write("---")
-
 st.subheader("Experience & Qualifications")
 st.write("""
         - 🏅 Qualified for JRF in Computer Science in December 2023
@@ -88,3 +115,20 @@ for project, link in PROJECTS.items():
     st.write(f"- [{project}]({link})")
 
 st.write("---")
+
+st.markdown(
+    f"""
+    <div style="display: flex; align-items: center;">
+        <a href="{SOCIAL_MEDIA['LinkedIN']}" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIN" width="24" height="24"/>
+        </a>
+        <a href="{SOCIAL_MEDIA['GitHub']}" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="GitHub" width="24" height="24"/>
+        </a>
+        <a href="{SOCIAL_MEDIA['X']}" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt="Twitter" width="24" height="24"/>
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
