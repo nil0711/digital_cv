@@ -73,7 +73,7 @@ st.write(
     - 🐍 Python Programming: Numpy, Pandas, sklearn, Pytorch, Keras, Streamlit, Seaborn, Mathplotlib, google.generativeai, openai, tensorflow, nltk, Plotly
     - 🧠 Machine Learning: Decision Tree, Neural Networks, Bayesian Network, Markov Model, Hidden Markov Model, Clustering, Classification, Deep Learning, LLM, NLP
     - 🐧 Linux: Linux System Administration, Shell Scripting, Samba, LVM, Git, C/C++/Java/Python coding debugging in terminal
-    - 💾 Databases: MongoDB, MySql 
+    - 💾 Databases: MongoDB, MySql, ChromaDB
 
     '''
 )
