@@ -80,6 +80,6 @@ st.write(
 st.write("---")
 st.subheader("Projects & Accomplishments")
 for project, link in PROJECTS.items():
-    st.write(f"[{project}]({link})")
+    st.write(f"- [{project}]({link})")
 
 st.write("---")
