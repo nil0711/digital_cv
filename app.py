@@ -65,7 +65,7 @@ st.write("---")
 st.subheader("Experience & Qualifications")
 st.write("""
         - 🏅 Qualified for JRF in Computer Science in December 2023
-        - 🎓 Pursuing a Master's degree in Computer Science from PondiFaiss, langchaincherry University, expected to graduate in June 2024        
+        - 🎓 Pursuing a Master's degree in Computer Science from Pondicherry University, expected to graduate in June 2024        
         - 🎓 Earned a Bachelor's degree in Mathematics from St. Xavier's College, Kolkata in May 2020
         - 🔎 Strong problem-solving and analytical skills
         - 💬 Good communication and teamwork skills
