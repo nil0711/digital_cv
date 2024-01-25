@@ -116,19 +116,3 @@ for project, link in PROJECTS.items():
 
 st.write("---")
 
-st.markdown(
-    f"""
-    <div style="display: flex; align-items: center;">
-        <a href="{SOCIAL_MEDIA['LinkedIN']}" target="_blank">
-            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIN" width="24" height="24"/>
-        </a>
-        <a href="{SOCIAL_MEDIA['GitHub']}" target="_blank">
-            <img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="GitHub" width="24" height="24"/>
-        </a>
-        <a href="{SOCIAL_MEDIA['X']}" target="_blank">
-            <img src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt="Twitter" width="24" height="24"/>
-        </a>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
