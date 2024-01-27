@@ -80,13 +80,8 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 st.write('#')
 st.subheader("About Me")
 st.write('''
-         Aspiring computer scientist with strong skills in Python, Linux, and
-applied machine learning. Demonstrated ability to create data-driven
-solutions using statistical modeling and algorithmic optimization
-techniques. Passionate about innovation and learning new technologies.
-Seeking a challenging role in a forward-thinking organization where I can
-contribute my expertise, collaborate on impactful projects, and push the
-technological boundaries.
+         
+I am an aspiring computer scientist with strong skills in Python, Linux, and applied machine learning. I have demonstrated the ability to create data-driven solutions using statistical modeling and algorithmic optimization techniques. I am passionate about innovation and learning new technologies. I am seeking a challenging role in a forward-thinking organization where I can contribute my expertise, collaborate on impactful projects, and push the technological boundaries.
          ''')
 st.write("---")
 st.subheader("Experience & Qualifications")
