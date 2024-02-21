@@ -86,6 +86,7 @@ I am an aspiring computer scientist with strong skills in Python, Linux, and app
 st.write("---")
 st.subheader("Experience & Qualifications")
 st.write("""
+        - 🏅 Qualified in GATE 2024 in CS and DA
         - 🏅 Qualified for JRF in Computer Science in December 2023
         - 🎓 Pursuing a Master's degree in Computer Science from Pondicherry University, expected to graduate in June 2024        
         - 🎓 Earned a Bachelor's degree in Mathematics from St. Xavier's College, Kolkata in May 2020
