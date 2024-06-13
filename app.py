@@ -16,9 +16,10 @@ DESCRIPTION ="""
 Motivated computer science student specializing in applied machine learning, Python, and Linux, with a focus on crafting data-driven solutions."""
 EMAIL ="nghosh0711@gmail.com"
 PROJECTS={
+    ":construction: LLM Project":"https://github.com/nil0711/LM_Reseach_Project",
     ":speech_balloon: Chat Analysis with Sentiment Analyzer" :"https://miniproject-senti.streamlit.app/",
-    ":file_folder: File Manager":"https://github.com/nil0711/CODE/blob/main/tkinter_test/test5.py",
-    ":construction: LLM Project":"Currently under development"
+    ":file_folder: File Manager":"https://github.com/nil0711/CODE/blob/main/tkinter_test/test5.py"
+    
 }
 st.set_page_config(page_title = PAGE_TITLE,page_icon=PAGE_ICON ,initial_sidebar_state="collapsed")
 
@@ -88,7 +89,8 @@ st.subheader("Experience & Qualifications")
 st.write("""
         - 🏅 Qualified in GATE 2024 in CS and DA
         - 🏅 Qualified for JRF in Computer Science in December 2023
-        - 🎓 Pursuing a Master's degree in Computer Science from Pondicherry University, expected to graduate in June 2024        
+        - 🎓 Doing Research in Computer Science from Indian Institute of Technology, Delhi, starting from July 2024
+        - 🎓 Earned a Master's degree in Computer Science from Pondicherry University, in June 2024        
         - 🎓 Earned a Bachelor's degree in Mathematics from St. Xavier's College, Kolkata in May 2020
         - 🔎 Strong problem-solving and analytical skills
         - 💬 Good communication and teamwork skills
