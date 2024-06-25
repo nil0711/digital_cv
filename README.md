@@ -1,4 +1,4 @@
-##Overview
+## Overview
 
 The `app.py` file is the main script for the Digital CV application built with Streamlit. This application is designed to create a digital resume using Python and Streamlit, allowing users to display their professional information interactively.
 
