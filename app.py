@@ -14,7 +14,7 @@ PAGE_ICON = ":wave:"
 NAME ="Nilanjan Ghosh"
 DESCRIPTION ="""
 Motivated computer science student specializing in applied machine learning, Python, and Linux, with a focus on crafting data-driven solutions."""
-EMAIL ="nghosh0711@gmail.com"
+EMAIL ="csz248005@cse.iitd.ac.in"
 PROJECTS={
     ":construction: LLM Project":"https://github.com/nil0711/LM_Reseach_Project",
     ":speech_balloon: Chat Analysis with Sentiment Analyzer" :"https://miniproject-senti.streamlit.app/",
