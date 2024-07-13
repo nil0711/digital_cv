@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital CV | Nilanjan Ghosh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Readex Pro', sans-serif;
+        }
+        body {
+            background-color: #f0f2f6;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #1e1e1e;
+            color: #ccc;
+        }
+        .dark-mode a {
+            color: #ccc;
+        }
+        .dark-mode a:hover {
+            color: #d33682 !important;
+        }
+        .dark-mode .btn-custom {
+            background-color: #333;
+        }
+        .dark-mode .btn-custom:hover {
+            background-color: #444;
+        }
+        .dark-mode hr {
+            border-color: #d33682;
+        }
+        .dark-mode .email-link {
+            color: #ddd;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+        a:hover {
+            color: #d33682 !important;
+            transform: scale(1.1);
+        }
+        ul {
+            list-style-type: none;
+        }
+        hr {
+            margin-top: 0px;
+            margin-bottom: 5%;
+            border-color: initial;
+            transition: border-color 0.3s;
+        }
+        .profile-pic {
+            width: 220px;
+            border-radius: 10%;
+        }
+        .btn-custom {
+            background-color: #29a5e2;
+            color: white;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #29a5e2;
+        }
+        .social-icon {
+            width: 42px;
+            height: 42px;
+            transition: transform 0.2s;
+        }
+        .social-icon:hover {
+            transform: scale(1.3);
+        }
+        .social-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .slider {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        #MainMenu, footer, header {
+            visibility: hidden;
+        }
+        .email-link {
+            font-size: 1.2rem; /* Increase font size of email link */
+        }
+        .email-link i {
+            font-size: 2rem; /* Increase font size of email icon */
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <label for="modeSwitch">Dark Mode</label>
+        <input type="checkbox" id="modeSwitch">
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="assets/788.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+            <div class="col-md-8">
+                <h1>Nilanjan Ghosh</h1>
+                <p>Motivated computer science student specializing in applied machine learning, Python, and Linux, with a focus on crafting data-driven solutions.</p>
+                <a href="assets/NILANJAN GHOSH.pdf" download class="btn btn-custom"><i class="fas fa-file-download"></i> Download Resume</a>
+                <p class="mt-3"><a href="mailto:csz248005@cse.iitd.ac.in" class="email-link"><i class="fas fa-envelope"></i>📨 csz248005@cse.iitd.ac.in</a></p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col text-center social-container">
+                <a href="https://www.linkedin.com/in/nilanjan-ghosh-a25747282/"><img src="assets/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+                <a href="https://github.com/nil0711"><img src="assets/github.png" alt="GitHub" class="social-icon"></a>
+                <a href="https://x.com/nil0711_iitd"><img src="assets/x.png" alt="Twitter" class="social-icon"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="mt-4">
+            <h2>About Me</h2>
+            <p>
+                I am an aspiring computer scientist with strong skills in Python, Linux, and applied machine learning. I have demonstrated the ability to create data-driven solutions using statistical modeling and algorithmic optimization techniques. I am passionate about innovation and learning new technologies. I am seeking a challenging role in a forward-thinking organization where I can contribute my expertise, collaborate on impactful projects, and push the technological boundaries.
+            </p>
+        </div>
+        <hr>
+        <div class="mt-4">
+            <h2>Experience & Qualifications</h2>
+            <ul>
+                <li>🏅 Qualified in GATE 2024 in CS and DA</li>
+                <li>🏅 Qualified for JRF in Computer Science in December 2023</li>
+                <li>🎓 Pursuing Research in Computer Science at the Indian Institute of Technology, Delhi, starting from July 2024</li>
+                <li>🎓 Earned a Master's degree in Computer Science from Pondicherry University, in June 2024</li>
+                <li>🎓 Earned a Bachelor's degree in Mathematics from St. Xavier's College, Kolkata in May 2020</li>
+                <li>🔎 Strong problem-solving and analytical skills</li>
+                <li>💬 Good communication and teamwork skills</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="mt-4">
+            <h2>Skills</h2>
+            <ul>
+                <li>🐍 Python Programming: Numpy, Pandas, sklearn, Pytorch, Keras, Streamlit, Seaborn, Mathplotlib, google.generativeai, openai, tensorflow, nltk, Plotly, Faiss, langchain</li>
+                <li>🧠 Machine Learning: Decision Tree, Neural Networks, Bayesian Network, Markov Model, Hidden Markov Model, Clustering, Classification, Deep Learning, LLM, NLP</li>
+                <li>🐧 Linux: Linux System Administration, Shell Scripting, Samba, LVM, Git, C/C++/Java/Python coding debugging in terminal</li>
+                <li>💾 Databases: MongoDB, MySql, ChromaDB</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="mt-4">
+            <h2>Projects & Accomplishments</h2>
+            <ul>
+                <li><a href="https://github.com/nil0711/LM_Reseach_Project">🔧 LLM Project</a></li>
+                <li><a href="https://miniproject-senti.streamlit.app/">💬 Chat Analysis with Sentiment Analyzer</a></li>
+                <li><a href="https://github.com/nil0711/CODE/blob/main/tkinter_test/test5.py">📁 File Manager</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const modeSwitch = document.getElementById('modeSwitch');
+        const body = document.body;
+
+        modeSwitch.addEventListener('change', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
