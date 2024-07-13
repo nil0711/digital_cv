@@ -6,7 +6,7 @@ current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd
 
 css_file = current_dir/"styles"/ "main.css"
 resume_file = current_dir/"assets"/"NILANJAN GHOSH.pdf"
-profile_pic = current_dir/"assets"/"788.jpg"
+profile_pic = current_dir/"assets"/"788.jpeg"
 social_logo = current_dir/"assets"
 
 PAGE_TITLE = "Digital CV | Nilanjan Ghosh"
@@ -46,7 +46,7 @@ with col2:
     )
     st.write("📨", EMAIL)
 SOCIAL_MEDIA={
-    "LinkedIN":"https://www.linkedin.com/in/nilanjan-ghosh-a25747282/",
+    "LinkedIN":"https://www.linkedin.com/in/nilanjan-ghosh-iitd/",
     "GitHub":"https://github.com/nil0711",
     "X":"https://x.com/nil0711_iitd",
     
