@@ -48,7 +48,7 @@ with col2:
 SOCIAL_MEDIA={
     "LinkedIN":"https://www.linkedin.com/in/nilanjan-ghosh-a25747282/",
     "GitHub":"https://github.com/nil0711",
-    "X":"https://twitter.com/csnil0711",
+    "X":"https://x.com/nil0711_iitd",
     
 
 }
